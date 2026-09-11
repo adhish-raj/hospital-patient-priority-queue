@@ -53,6 +53,14 @@ int main() {
 
     printf("\n--- Treatment Order ---\n");
 
+    treatNextPatient();
+    treatNextPatient();
+
+    printf("\n--- New Emergency Patient ---\n");
+    addPatient("P7", 1);
+
+    printf("\n--- Remaining Treatment Order ---\n");
+
     while (size > 0) {
         treatNextPatient();
     }
